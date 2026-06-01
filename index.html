@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- La Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><!--Aqui se crea la navbar, se expande o se junta le dice que el fondo sera oscuro y pone letra en blanco, da bgcolor y  -->
+        <div class="container">
+            <a class="navbar-brand" href="#">Anime Lat</a>
+
+        <!--La barra buscadora-->
+            <form id="formBusqueda" class="d-flex" role="search">
+                <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Buscar..."
+                    aria-label="Buscar"
+                >
+                <button class="btn btn-outline-primary" type="submit">
+                    Buscar
+                </button>
+            </form>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Catálogo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Perfil</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
