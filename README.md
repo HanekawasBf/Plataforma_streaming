@@ -1,8 +1,8 @@
 DATOS: 
-Nombre: Ortega Plaza Diego
-Cuatrimestre:6to
-Carrera :Ing. Desarrolo de Software
-Matricula: 2403230009
+- Nombre: Ortega Plaza Diego
+- Cuatrimestre:6to
+- Carrera :Ing. Desarrollo de Software
+- Matricula: 2403230009
 
 - Anime Lat 
 
