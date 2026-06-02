@@ -8,48 +8,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- La Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><!--Aqui se crea la navbar, se expande o se junta le dice que el fondo sera oscuro y pone letra en blanco, da bgcolor y  -->
-        <div class="container">
-            <a class="navbar-brand" href="#">Anime Lat</a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
 
-        <!--La barra buscadora-->
-            <form id="formBusqueda" class="d-flex" role="search">
-                <input
-                    id="busqueda"
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Buscar..."
-                    aria-label="Buscar"
-                >
-                <button class="btn btn-outline-primary" type="submit">
-                    Buscar
-                </button>
-            </form>
+        <a class="navbar-brand" href="index.html">Anime Lat</a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                <span class="navbar-toggler-icon"></span>
+        <form id="formBusqueda" class="d-flex mx-auto" role="search">
+            <input
+                id="busqueda"
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar..."
+            >
+            <button class="btn btn-outline-primary" type="submit">
+                Buscar
             </button>
+        </form>
 
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
-                    </li>
+        <div class="collapse navbar-collapse flex-grow-0" id="menu">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Catálogo</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Catálogo</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Perfil</a>
-                    </li>
-                </ul>
-            </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Perfil</a>
+                </li>
+            </ul>
         </div>
-    </nav>
 
-    <section class="bg-primary text-white text-center p-5">
+    </div>
+</nav>
+
+    
+    <section class=" hero bg-primary text-white text-center p-5">
         <div class="container">
             <h1>Página para los aficionados al anime.</h1>
             <p>
@@ -102,7 +98,7 @@
                                     </div>
                                 </div>
 
-                                <a href="Konosuba.html" class="btn btn-danger mt-3">
+                                <a href="/Paginashtml/Konosuba.html" class="btn btn-danger mt-3">
                                     Ver ahora
                                 </a>
                             </div>
@@ -134,7 +130,7 @@
                                     </div>
                                 </div>
 
-                                <a class="btn btn-danger mt-3">
+                                <a href="/Paginashtml/My_Dress-up.html" class="btn btn-danger mt-3">
                                     Ver ahora
                                 </a>
                             </div>
@@ -168,7 +164,7 @@
                                     </div>
                                 </div>
 
-                                <a href="#" class="btn btn-danger mt-3">
+                                <a href="/Paginashtml/Nanbaka.html" class="btn btn-danger mt-3">
                                     Ver ahora
                                 </a>
                             </div>
@@ -202,7 +198,7 @@
                                     </div>
                                 </div>
 
-                                <a href="#" class="btn btn-danger mt-3">
+                                <a href="/Paginashtml/Jjk.html" class="btn btn-danger mt-3">
                                     Ver ahora
                                 </a>
 
@@ -219,11 +215,11 @@
 
     <footer class="bg-dark text-white text-center p-4">
         <p class="mb-0">
-            © 2026 Manga web
+            © 2026 Anime Lat
         </p>
     </footer>
 
     <script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
