@@ -3,94 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>AnimeLat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
+        <div class="container-fluid">
 
-        <a class="navbar-brand" href="index.html">Anime Lat</a>
+            <!-- nombre de la pag -->
+            <a class="navbar-brand" href="index.html">Anime Lat</a>
 
-        <form id="formBusqueda" class="d-flex mx-auto" role="search">
-            <input
-                id="busqueda"
-                class="form-control me-2"
-                type="search"
-                placeholder="Buscar..."
+            <!-- Barra de búsqueda -->
+            <form id="formBusqueda" class="d-flex mx-auto" role="search">
+                <input
+                    id="busqueda"
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Buscar..."
+                >
+                <button class="btn btn-outline-primary" type="submit">Buscar</button>
+            </form>
+
+            <!-- Botón hamburguesa (para pantallas pequeñas o cuando haga pequeña la pagina)-->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                aria-controls="menu"
+                aria-expanded="false"
             >
-            <button class="btn btn-outline-primary" type="submit">
-                Buscar
+                <span class="navbar-toggler-icon"></span>
             </button>
-        </form>
 
-        <div class="collapse navbar-collapse flex-grow-0" id="menu">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Inicio</a>
-                </li>
+            <!-- Links de navegación -->
+            <div class="collapse navbar-collapse flex-grow-0" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/index.html">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+                </ul>
+            </div>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Catálogo</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Perfil</a>
-                </li>
-            </ul>
         </div>
+    </nav>
 
-    </div>
-</nav>
 
-    
-    <section class=" hero bg-primary text-white text-center p-5">
+    <section class="hero bg-primary text-white text-center p-5">
         <div class="container">
             <h1>Página para los aficionados al anime.</h1>
-            <p>
-                Catálogo completo.
-            </p>
-
-            <button class="btn btn-light">
-                Ver Más
-            </button>
+            <p>Catálogo completo.</p>
+            <button class="btn btn-light">Ver Más</button>
         </div>
     </section>
 
-    <!-- el Contenido -->
-    <main class="container my-5 ">
 
+    <main class="container my-5">
         <div class="row">
-
-            <!-- Aqui el contenido principal -->
-            <section class="col-12"> <!--ESTO DECIDE CUANTO ESPACIO USARA EL CONTENIDO-->
+            <section class="col-12">
 
                 <h2 class="mb-4">Animes destacados</h2>
 
+                <!-- Grid de las tarjetas-->
                 <div class="row g-4">
 
-                    <!-- Tarjeta 1 -->
+                    <!-- --- Tarjeta: Konosuba --- -->
                     <div class="col-12 col-lg-3">
                         <div class="card h-100">
-                            <img src="/img/KonoSuba.jpg" class="card-img-top">
+                            <a href="/Paginashtml/Konosuba.html">
+                                <img src="/img/KonoSuba.jpg" class="card-img-top" alt="Konosuba">
+                            </a>
 
                             <div class="card-body">
                                 <h5 class="card-title">Konosuba</h5>
 
                                 <p class="card-text">
                                     Kazuma Satō, un joven otaku y recluido, muere de forma ridícula. En el más allá, se le ofrece reencarnar en un mundo...
-                                    <a
-                                        id="btnSinopsis"
-                                        class="text-primary"
-                                        data-bs-toggle="collapse"
-                                        href="#sinopsisKonosuba"
-                                        role="button"
-                                    >
+                                    <!-- Botón para expandir la sinopsis-->
+                                    <a class="text-primary" data-bs-toggle="collapse" href="#sinopsisKonosuba" role="button">
                                         Leer más
                                     </a>
                                 </p>
-                                
 
                                 <div class="collapse mt-3" id="sinopsisKonosuba">
                                     <div class="card card-body">
@@ -98,63 +94,55 @@
                                     </div>
                                 </div>
 
-                                <a href="/Paginashtml/Konosuba.html" class="btn btn-danger mt-3">
-                                    Ver ahora
-                                </a>
+                                <a href="/Paginashtml/Konosuba.html" class="btn btn-danger mt-3">Ver ahora</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Tarjeta 2 -->
+                    <!-- --- Tarjeta: My Dress-Up Darling --- -->
                     <div class="col-12 col-lg-3">
                         <div class="card h-100">
-                            <img src="/img/My Dress-Up Darling.jpg" class="card-img-top">
+                            <a href="/Paginashtml/My_Dress-up.html">
+                                <img src="/img/My Dress-Up Darling.jpg" class="card-img-top" alt="My Dress-Up Darling">
+                            </a>
 
                             <div class="card-body">
                                 <h5 class="card-title">My Dress-Up Darling</h5>
 
                                 <p class="card-text">
                                     Wakana Gojo, un estudiante solitario y experto en la confección de muñecas tradicionales Hina, ve su vida transforma...
-                                    <a
-                                    id="btnSinopsis"
-                                    class="text-primary"
-                                    data-bs-toggle="collapse"
-                                    href="#sinopsisMydress"
-                                    role="button"
-                                    >Leer más</a>
+                                    <!-- Botón para expandir la sinopsis-->
+                                    <a class="text-primary" data-bs-toggle="collapse" href="#sinopsisMydress" role="button">
+                                        Leer más
+                                    </a>
                                 </p>
 
                                 <div class="collapse mt-3" id="sinopsisMydress">
                                     <div class="card card-body">
-                                    Wakana Gojo, un estudiante solitario y experto en la confección de muñecas tradicionales Hina, ve su vida transformada al conocer a Marin Kitagawa. Ella, la chica más popular y extrovertida del instituto, le revela un secreto: es una apasionada del cosplay. Juntos comienzan una divertida aventura cosiendo trajes y creando vínculos.
+                                        Wakana Gojo, un estudiante solitario y experto en la confección de muñecas tradicionales Hina, ve su vida transformada al conocer a Marin Kitagawa. Ella, la chica más popular y extrovertida del instituto, le revela un secreto: es una apasionada del cosplay. Juntos comienzan una divertida aventura cosiendo trajes y creando vínculos.
                                     </div>
                                 </div>
 
-                                <a href="/Paginashtml/My_Dress-up.html" class="btn btn-danger mt-3">
-                                    Ver ahora
-                                </a>
+                                <a href="/Paginashtml/My_Dress-up.html" class="btn btn-danger mt-3">Ver ahora</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Tarjeta 3 -->
+                    <!-- --- Tarjeta: Nanbaka --- -->
                     <div class="col-12 col-lg-3">
                         <div class="card h-100">
-                            <img src="/img/Nanbaka.jpg" class="card-img-top">
+                            <a href="/Paginashtml/Nanbaka.html">
+                                <img src="/img/Nanbaka.jpg" class="card-img-top" alt="Nanbaka">
+                            </a>
 
                             <div class="card-body">
                                 <h5 class="card-title">Nanbaka</h5>
 
                                 <p class="card-text">
                                     Cuatro hombres son enviados a Nanba, la prisión más formidable del mundo. Jyugo es un joven que intentó escapar de p...
-                                    <a
-                                        id="btnSinopsis"
-                                        class="text-primary"
-                                        data-bs-toggle="collapse"
-                                        href="#sinopsisNanbaka"
-                                        role="button"
-                                    >
-                                        leer más
+                                    <!-- Botón para expandir la sinopsis-->
+                                    <a class="text-primary" data-bs-toggle="collapse" href="#sinopsisNanbaka" role="button">
+                                        Leer más
                                     </a>
                                 </p>
 
@@ -164,30 +152,25 @@
                                     </div>
                                 </div>
 
-                                <a href="/Paginashtml/Nanbaka.html" class="btn btn-danger mt-3">
-                                    Ver ahora
-                                </a>
+                                <a href="/Paginashtml/Nanbaka.html" class="btn btn-danger mt-3">Ver ahora</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Tarjeta 4 -->
+                    <!-- --- Tarjeta: Jujutsu Kaisen --- -->
                     <div class="col-12 col-lg-3">
                         <div class="card h-100">
-                            <img src="/img/JJK.jpg" class="card-img-top">
+                            <a href="/Paginashtml/Jjk.html">
+                                <img src="/img/JJK.jpg" class="card-img-top" alt="Jujutsu Kaisen">
+                            </a>
 
                             <div class="card-body">
                                 <h5 class="card-title">Jujutsu Kaisen</h5>
 
                                 <p class="card-text">
-                                    sigue a Yuji Itadori, un estudiante con una fuerza física descomunal que se une al club de ocultismo. Su vida cambia...
-                                    <a
-                                        id="btnSinopsis"
-                                        class="text-primary"
-                                        data-bs-toggle="collapse"
-                                        href="#sinopsisJJK"
-                                        role="button"
-                                    >
+                                    Sigue a Yuji Itadori, un estudiante con una fuerza física descomunal que se une al club de ocultismo. Su vida cambia...
+                                    <!-- Botón para expandir la sinopsis-->
+                                    <a class="text-primary" data-bs-toggle="collapse" href="#sinopsisJJK" role="button">
                                         Leer más
                                     </a>
                                 </p>
@@ -198,28 +181,26 @@
                                     </div>
                                 </div>
 
-                                <a href="/Paginashtml/Jjk.html" class="btn btn-danger mt-3">
-                                    Ver ahora
-                                </a>
-
+                                <a href="/Paginashtml/Jjk.html" class="btn btn-danger mt-3">Ver ahora</a>
                             </div>
                         </div>
                     </div>
 
                 </div>
+                <!-- / Aqui acaban las tarjetas -->
+
             </section>
-
         </div>
-
     </main>
 
+
     <footer class="bg-dark text-white text-center p-4">
-        <p class="mb-0">
-            © 2026 Anime Lat
-        </p>
+        <p class="mb-0">© 2026 Anime Lat</p>
     </footer>
+
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
