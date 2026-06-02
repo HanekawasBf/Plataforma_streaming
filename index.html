@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Document</title>
+    <title>AnimeLat</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,6 +16,7 @@
         <!--La barra buscadora-->
             <form id="formBusqueda" class="d-flex" role="search">
                 <input
+                    id="busqueda"
                     class="form-control me-2"
                     type="search"
                     placeholder="Buscar..."
@@ -48,13 +49,181 @@
         </div>
     </nav>
 
+    <section class="bg-primary text-white text-center p-5">
+        <div class="container">
+            <h1>Página para los aficionados al anime.</h1>
+            <p>
+                Catálogo completo.
+            </p>
 
+            <button class="btn btn-light">
+                Ver Más
+            </button>
+        </div>
+    </section>
 
+    <!-- el Contenido -->
+    <main class="container my-5 ">
 
+        <div class="row">
 
+            <!-- Aqui el contenido principal -->
+            <section class="col-12"> <!--ESTO DECIDE CUANTO ESPACIO USARA EL CONTENIDO-->
 
+                <h2 class="mb-4">Animes destacados</h2>
 
+                <div class="row g-4">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+                    <!-- Tarjeta 1 -->
+                    <div class="col-12 col-lg-3">
+                        <div class="card h-100">
+                            <img src="/img/KonoSuba.jpg" class="card-img-top">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Konosuba</h5>
+
+                                <p class="card-text">
+                                    Kazuma Satō, un joven otaku y recluido, muere de forma ridícula. En el más allá, se le ofrece reencarnar en un mundo...
+                                    <a
+                                        id="btnSinopsis"
+                                        class="text-primary"
+                                        data-bs-toggle="collapse"
+                                        href="#sinopsisKonosuba"
+                                        role="button"
+                                    >
+                                        Leer más
+                                    </a>
+                                </p>
+                                
+
+                                <div class="collapse mt-3" id="sinopsisKonosuba">
+                                    <div class="card card-body">
+                                        Kazuma Satō, un joven otaku y recluido, muere de forma ridícula. En el más allá, se le ofrece reencarnar en un mundo de fantasía. Para fastidiar a la diosa Aqua, se la lleva consigo como su "poder especial". Rápidamente descubren que el mundo no es como los videojuegos: deben realizar trabajos forzados, endeudarse, y lidiar con un grupo disfuncional de aliados.
+                                    </div>
+                                </div>
+
+                                <a href="Konosuba.html" class="btn btn-danger mt-3">
+                                    Ver ahora
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 2 -->
+                    <div class="col-12 col-lg-3">
+                        <div class="card h-100">
+                            <img src="/img/My Dress-Up Darling.jpg" class="card-img-top">
+
+                            <div class="card-body">
+                                <h5 class="card-title">My Dress-Up Darling</h5>
+
+                                <p class="card-text">
+                                    Wakana Gojo, un estudiante solitario y experto en la confección de muñecas tradicionales Hina, ve su vida transforma...
+                                    <a
+                                    id="btnSinopsis"
+                                    class="text-primary"
+                                    data-bs-toggle="collapse"
+                                    href="#sinopsisMydress"
+                                    role="button"
+                                    >Leer más</a>
+                                </p>
+
+                                <div class="collapse mt-3" id="sinopsisMydress">
+                                    <div class="card card-body">
+                                    Wakana Gojo, un estudiante solitario y experto en la confección de muñecas tradicionales Hina, ve su vida transformada al conocer a Marin Kitagawa. Ella, la chica más popular y extrovertida del instituto, le revela un secreto: es una apasionada del cosplay. Juntos comienzan una divertida aventura cosiendo trajes y creando vínculos.
+                                    </div>
+                                </div>
+
+                                <a class="btn btn-danger mt-3">
+                                    Ver ahora
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 3 -->
+                    <div class="col-12 col-lg-3">
+                        <div class="card h-100">
+                            <img src="/img/Nanbaka.jpg" class="card-img-top">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Nanbaka</h5>
+
+                                <p class="card-text">
+                                    Cuatro hombres son enviados a Nanba, la prisión más formidable del mundo. Jyugo es un joven que intentó escapar de p...
+                                    <a
+                                        id="btnSinopsis"
+                                        class="text-primary"
+                                        data-bs-toggle="collapse"
+                                        href="#sinopsisNanbaka"
+                                        role="button"
+                                    >
+                                        leer más
+                                    </a>
+                                </p>
+
+                                <div class="collapse mt-3" id="sinopsisNanbaka">
+                                    <div class="card card-body">
+                                        Cuatro hombres son enviados a Nanba, la prisión más formidable del mundo. Jyugo es un joven que intentó escapar de prisión y su único resultado fue ampliar su estadía en ella. Uno es un hombre al que le encanta apostar con mujeres. Rock vive para meterse en una pelea tras otra. Nico es... bueno, un aficionado al anime. Una comedia sobre la vida diaria de los presos de esta curiosa prisión y de los guardias que deben vigilarlos.
+                                    </div>
+                                </div>
+
+                                <a href="#" class="btn btn-danger mt-3">
+                                    Ver ahora
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 4 -->
+                    <div class="col-12 col-lg-3">
+                        <div class="card h-100">
+                            <img src="/img/JJK.jpg" class="card-img-top">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Jujutsu Kaisen</h5>
+
+                                <p class="card-text">
+                                    sigue a Yuji Itadori, un estudiante con una fuerza física descomunal que se une al club de ocultismo. Su vida cambia...
+                                    <a
+                                        id="btnSinopsis"
+                                        class="text-primary"
+                                        data-bs-toggle="collapse"
+                                        href="#sinopsisJJK"
+                                        role="button"
+                                    >
+                                        Leer más
+                                    </a>
+                                </p>
+
+                                <div class="collapse mt-3" id="sinopsisJJK">
+                                    <div class="card card-body">
+                                        Sigue a Yuji Itadori, un estudiante con una fuerza física descomunal que se une al club de ocultismo. Su vida cambia radicalmente cuando ingiere un dedo maldito de grado especial, el de Ryomen Sukuna (el Rey de las Maldiciones), para salvar a sus amigos. Al poseer este ser, Yuji se convierte en su anfitrión, pero descubre que puede mantener el control de su propio cuerpo.
+                                    </div>
+                                </div>
+
+                                <a href="#" class="btn btn-danger mt-3">
+                                    Ver ahora
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center p-4">
+        <p class="mb-0">
+            © 2026 Manga web
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
