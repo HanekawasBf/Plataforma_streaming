@@ -1,3 +1,9 @@
+DATOS: 
+Nombre: Ortega Plaza Diego
+Cuatrimestre:6to
+Carrera :Ing. Desarrolo de Software
+Matricula: 2403230009
+
 - Anime Lat 
 
 Página web para aficionados al anime donde puedes explorar un catálogo de series y ver episodios directamente desde el sitio.
